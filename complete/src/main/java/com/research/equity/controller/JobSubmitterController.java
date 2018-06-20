@@ -14,7 +14,7 @@ public class JobSubmitterController {
     @Autowired
     private ISMACalculationService ismaCalculationService;
 
-    @RequestMapping(value = "/submitJob", method = RequestMethod.GET)
+    @RequestMapping(value = "/submitJob", method = RequestMethod.POST)
     public void runSMACalculationJob() {
         ismaCalculationService.runSMACalculationJob();
     }
